@@ -1,0 +1,24 @@
+{
+  "name": "react-makeWheels",
+  "version": "1.0.0",
+  "description": "TS React \r hello",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/littlezombies/TS-React-wheels.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/littlezombies/TS-React-wheels/issues"
+  },
+  "homepage": "https://github.com/littlezombies/TS-React-wheels#readme",
+  "devDependencies": {
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12"
+  }
+}
