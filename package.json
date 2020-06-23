@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/littlezombies/TS-React-wheels#readme",
   "devDependencies": {
+    "awesome-typescript-loader": "^5.2.1",
+    "typescript": "^3.9.5",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.12"
   }
