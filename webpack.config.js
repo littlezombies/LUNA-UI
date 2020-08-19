@@ -1,7 +1,5 @@
 const path = require('path')
-const htmlWebpackPlugin = require('html-webpack-plugin')
 module.exports = {
-    mode: 'production',
     entry: {
         index: './lib/index.tsx',
     },
@@ -9,6 +7,9 @@ module.exports = {
         path: path.resolve(__dirname, 'dist/lib'),
         library: 'tsWheels',
         libraryTarget: 'umd',
+    },
+    resolve: {
+        extensions: ['.js', '.jsx', '.ts', '.tsx'],
     },
     module: {
         rules: [
@@ -18,9 +19,4 @@ module.exports = {
             },
         ],
     },
-    plugins: [
-        new htmlWebpackPlugin({
-            template: 'index.html',
-        })
-    ],
 }

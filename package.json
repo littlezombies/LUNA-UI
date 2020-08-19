@@ -2,9 +2,12 @@
   "name": "react-makeWheels",
   "version": "1.0.0",
   "description": "TS React \r hello",
-  "main": "index.js",
+  "main": "dis/lib/index",
+  "types": "dist/lib/index",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --config webpack.config.dev.js",
+    "biuld": "webpack --config webpack.config.prod.js"
   },
   "repository": {
     "type": "git",
@@ -18,11 +21,17 @@
   },
   "homepage": "https://github.com/littlezombies/TS-React-wheels#readme",
   "devDependencies": {
+    "@types/react": "^16.9.41",
+    "@types/react-dom": "^16.9.8",
     "awesome-typescript-loader": "^5.2.1",
     "html-webpack-plugin": "^4.3.0",
     "typescript": "^3.9.5",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
   }
 }
