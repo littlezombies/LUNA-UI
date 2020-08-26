@@ -20,7 +20,10 @@
         "allowSyntheticDefaultImports": true,
         "noUnusedLocals": true
     },
-    "include": [],
+    "include": [
+        // 这一条加不加好像没区别？
+        "lib/**/*",
+    ],
     "exclude": [
         "node_modules",
         "build",
