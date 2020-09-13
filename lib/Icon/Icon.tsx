@@ -1,5 +1,5 @@
 import React from "react";
-import "../../icon/alipay.svg";
+import "./icon/alipay.svg";
 import "./iconStyle.scss";
 
 interface IconProps extends React.SVGAttributes<SVGElement> {

@@ -23,6 +23,8 @@ module.export = {
   transform: {
     "^.+unit\\.(js|jsx)$": "babel-jest",
     "^.+\\.(ts|tsx)$": "ts-jest",
+    // ".+\\.(svg|css|styl|less|sass|scss|png|jpg|ttf|woff|woff2)$":
+    //   "jest-transform-stub",
   },
   setupFilesAfterEnv: ["<rootDir>test/setupTests.js"],
 };

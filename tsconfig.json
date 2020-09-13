@@ -1,38 +1,41 @@
 {
-    "compilerOptions": {
-        "declaration": true,
-        //类型输出文件
-        "outDir": "dist",
-        "baseUrl": ".",
-        "module": "esnext",
-        "target": "es5",
-        "lib": ["ES6", "DOM"],
-        "sourceMap": true,
-        "jsx": "react",
-        "moduleResolution": "node",
-        "rootDir": ".",
-        "forceConsistentCasingInFileNames": true,
-        "noImplicitReturns": true,
-        "noImplicitThis": false,
-        "noImplicitAny": true,
-        "importHelpers": true,
-        "strictNullChecks": true,
-        "allowSyntheticDefaultImports": true,
-        "noUnusedLocals": true
-    },
-    "include": [
-        // 这一条加不加好像没区别？
-        "lib/**/*",
-    ],
-    "exclude": [
-        "node_modules",
-        "build",
-        "dist",
-        "scripts",
-        "acceptance-tests",
-        "webpack",
-        "jest",
-        "src/setupTests.ts",
-        "*.js"
-    ]
+  "compilerOptions": {
+    "outDir": "dist",
+    "declaration": true,
+    "baseUrl": ".",
+    "module": "esnext",
+    "target": "es5",
+    "lib": ["es6", "dom"],
+    "sourceMap": true,
+    "jsx": "react",
+    "moduleResolution": "node",
+    "rootDir": ".",
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noImplicitAny": true,
+    "importHelpers": true,
+    "strictNullChecks": true,
+    // "suppressImplicitAnyIndexErrors": true,
+    // https://github.com/Microsoft/TypeScript/issues/28762#issuecomment-443406607
+    // "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "noUnusedLocals": true
+  },
+  "include": [
+    "lib/**/*",
+    "test/__mocks__/object-mock.js",
+    "test/__mocks__/file-mock.js"
+  ],
+  "exclude": [
+    "node_modules",
+    "build",
+    "dist",
+    "scripts",
+    "acceptance-tests",
+    "webpack",
+    "jest",
+    "src/setupTests.ts",
+    "*.js"
+  ]
 }
